@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "butler";
+    src: 
+        url("fonts/Butler-Medium.woff2") format("woff2"),
+        url("fonts/Butler-Medium.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: "game";
+    src: 
+    url("fonts/game_of_squids-webfont.woff") format("woff"),
+    url("fonts/game_of_squids-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
