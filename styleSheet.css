@@ -14,3 +14,31 @@
     font-weight: normal;
     font-style: normal;
 }
+
+body{
+    font-family: 'butler', "josefin Sans", sans-serif;
+    display: flex;
+    flex-flow: row;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#side{
+    width: 40%;
+}
+
+#mainPage{
+    width: 60%;
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+
