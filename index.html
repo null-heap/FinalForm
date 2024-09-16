@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FinalForm</title>
-    <link rel="stylesheet" href="styleSheet.css">
+    <link rel="stylesheet" href="styleSheet.css" />
     <script src="javaScript.js" defer></script>
-</head>
-<body>
-
-        <div id="side">
-            <div id="logo">
-                <img src="picures/odin-lined.png" alt="odin-logo">
-                <div>ODIN</div>
-            </div>
-            <div id="bottom">Photo by <a href="https://unsplash.com/@mak_jp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mak</a> on <a href="https://unsplash.com/photos/a-building-with-a-sign-that-says-downtown-DSPvIz-KZn4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
-        </div>
-    <div id="mainPage">
-        <form>
-            <p>This is not a real online service! You know you need something like this in your life to help yo realize your deepest dreams.</p>
-
-            <p><em>you know you want to.</em></p>
-
-            <fieldset id="submitForm">
-                <legend>Let's do this!</legend>
-                <div>
-
-                </div>
-            </fieldset>
-
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="" aria-label="log in">Log in</a></p>
-        </form>
+  </head>
+  <body>
+    <div id="side">
+      <div id="logo">
+        <img src="picures/odin-lined.png" alt="odin-logo" />
+        <div>ODIN</div>
+      </div>
+      <div id="bottom">
+        Photo by
+        <a
+          href="https://unsplash.com/@mak_jp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Mak</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/a-building-with-a-sign-that-says-downtown-DSPvIz-KZn4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </div>
     </div>
-</body>
+    <form>
+      <p>
+        This is not a real online service! You know you need something like this
+        in your life to help yo realize your deepest dreams.
+        <br>Sign up <em>now</em> to get started.
+      </p>
+
+      <p><em>you know you want to.</em></p>
+
+      <fieldset>
+        <h2>Let's do this!</h2>
+        <div id="inputsDiv">
+          <div>
+            <label for="fName">FIRST NAME</label>
+            <input type="text" name="firstName" id="fName" />
+          </div>
+          <div>
+            <label for="lName">LAST NAME</label>
+            <input type="text" name="lastName" id="lName">
+          </div>
+          <div>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div>
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="phone" id="phone">
+          </div>
+          <div>
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div>
+            <label for="conPass">CONFIRM PASSWORD</label>
+            <input type="password" name="conPass" id="conPass" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit">Create Account</button>
+      <div>Already have an account? <a href="" aria-label="log in">Log in</a></div>
+    </form>
+  </body>
 </html>

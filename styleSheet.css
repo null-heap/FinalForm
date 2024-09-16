@@ -22,17 +22,18 @@ body{
     margin: 0;
     height: 100vh;
     width: 100vw;
+    background-color: rgba(203, 201, 198, 0.954);
+
 }
 img{
     display: block;
     width: 5em;
     height: 5em;
 }
-/* light reset and style */
-a{
-    color: inherit;
-    font-family: 'Courier New', Courier, monospace;
+*{
+    box-sizing: border-box;
 }
+
 
 /* style for teh odin logo */
 #logo{
@@ -53,8 +54,9 @@ a{
 }
 
 #side{
-    background-image:url(picures/unsplash.jpg);
+    background-image: url(picures/unsplash.jpg);
     background-size: cover;
+
     height: 100%;
     width: 40%;
     /* to make the bottom div a footer/go down */
@@ -70,18 +72,112 @@ a{
     font-family: "game";
     margin-bottom: 0.5em;
 }
+/* light reset and style */
+#bottom a{
+    color: inherit;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 /* the form page */
-#mainPage{
-    width: 60%;
-}
 
-*{
+/* light element reset */
+button,
+label,
+input{
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
     box-sizing: border-box;
+
+    padding: 5px;
+    max-height: 30px;
 }
 
 
 
+form{
+    /* setting the right side of the page */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p{
+    max-width: 45ch;
+}
+form > *{
+    margin-left: 1em;
+}
+
+form > fieldset{
+    background-color: aliceblue;
+    border: none;
+    margin: 1em 0;
+    
+    /* to allign it with the form margin */
+    padding: 1em;
+
+    box-shadow: 0px 3px 5px #a7a6a6;
+}
+
+fieldset > #inputsDiv{
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 60%;
+}
+label{
+    font-size: 90%;
+}
+
+#inputsDiv > div{
+    margin-bottom: 1em;
+}
+
+h2{
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+input:invalid{
+    border: 1px solid red;
+    outline: none;
+}
+
+input:focus, input:hover{
+    background-color: #f2f2f2;
+}
+
+input{
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+}
 
 
+/* button styling */
 
+
+fieldset + button{
+    width: 10em;
+    margin-bottom: 2em;
+    color: #FFFFFF;
+    background-color: rgb(109, 97, 54);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+fieldset + button:hover{
+    background-color: rgb(72, 64, 35) ;
+}
+
+fieldset + button:active{
+    background-color: rgb(43, 38, 21) ;
+}
