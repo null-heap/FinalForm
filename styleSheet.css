@@ -58,7 +58,7 @@ img{
     background-size: cover;
 
     height: 100%;
-    width: 40%;
+    flex: 1 1 0;
     /* to make the bottom div a footer/go down */
     text-align: center;
     display: flex;
@@ -90,7 +90,7 @@ input{
     font-size: 100%;
     margin: 0;
     box-sizing: border-box;
-
+    width: max(80%);
     padding: 5px;
     max-height: 30px;
 }
@@ -99,7 +99,7 @@ input{
 
 form{
     /* setting the right side of the page */
-    width: 60%;
+    flex: 2 1 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,6 +108,7 @@ form{
 p{
     max-width: 45ch;
 }
+
 form > *{
     margin-left: 1em;
 }
@@ -126,16 +127,25 @@ form > fieldset{
 fieldset > #inputsDiv{
     margin-bottom: 20px;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     justify-content: space-between;
     max-width: 60%;
 }
 label{
     font-size: 90%;
+    margin-bottom: 5px;
 }
+.row{
+    display: flex;
 
-#inputsDiv > div{
+    /* made the shrink auto for responsive sizing */
+    flex: 1 1 auto;
+}
+.row > div{
     margin-bottom: 1em;
+    color:hsl(0, 0%, 41%);
+    /* combination of auto with width: max(80%) allows for responsive sizing */
+    flex: 1 1 auto;
 }
 
 h2{

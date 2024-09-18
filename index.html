@@ -38,29 +38,37 @@
       <fieldset>
         <h2>Let's do this!</h2>
         <div id="inputsDiv">
-          <div>
-            <label for="fName">FIRST NAME</label>
-            <input type="text" name="firstName" id="fName" />
+          <div class="row">
+            <div>
+              <label for="fName">FIRST NAME</label>
+              <input type="text" name="firstName" id="fName" />
+            </div>
+            <div>
+              <label for="lName">LAST NAME</label>
+              <input type="text" name="lastName" id="lName">
+            </div>
           </div>
-          <div>
-            <label for="lName">LAST NAME</label>
-            <input type="text" name="lastName" id="lName">
+
+          <div class="row">
+            <div>
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="phone" id="phone">
+            </div>
           </div>
-          <div>
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
-          </div>
-          <div>
-            <label for="phone">PHONE NUMBER</label>
-            <input type="tel" name="phone" id="phone">
-          </div>
-          <div>
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" required>
-          </div>
-          <div>
-            <label for="conPass">CONFIRM PASSWORD</label>
-            <input type="password" name="conPass" id="conPass" required>
+
+          <div class="row">
+            <div>
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" required>
+            </div>
+            <div>
+              <label for="conPass">CONFIRM PASSWORD</label>
+              <input type="password" name="conPass" id="conPass" required>
+            </div>
           </div>
         </div>
       </fieldset>
